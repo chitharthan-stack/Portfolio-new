@@ -582,7 +582,7 @@ a {
     font-size: 60px;
     background: transparent;
     border: none;
-    
+    height: 120px;
     color: #ffedd3;
     text-transform: uppercase;
     position: relative;
