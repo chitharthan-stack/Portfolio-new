@@ -5,10 +5,10 @@
     scroll-behavior: smooth;
 }
 
-/*--div {
+*{
     overflow: auto !important; 
     outline: 2px solid black !important;
-  }--*/
+  }
 
 
 
@@ -756,4 +756,47 @@ blockquote {
 .author {
     font-style: italic;
     font-size: 5vh;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 380px) {
+    .typography {
+        font-size: 13vh !important;
+    }
+    .typography {
+        -webkit-text-stroke: 1px #f8f8f8;
+    }
+    .author {
+        font-style: italic;
+        font-size: 3vh;
+    }
+    .contact.col-2 form {
+        padding: 0%;
+    }
+    .contact.col-2 #Location {
+        width: 50%;
+    }
+    .project.col-3 video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 320px) {
+    .typography {
+        font-size: 10vh !important;
+    }
+    .typography {
+        -webkit-text-stroke: 1px #f8f8f8;
+    }
+    .heading.col h1 {
+        font-size: 40px;
+    }
+    .scprd.row {
+        margin-top: 3%;
+        gap: 20px;
+    }
+    .skills.col-5 img {
+        height: 7vh !important;
+    }
 }
