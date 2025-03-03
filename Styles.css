@@ -800,3 +800,12 @@ blockquote {
         height: 7vh !important;
     }
 }
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .typography {
+        font-size: 25vh !important;
+    }
+    .heading.col h1 {
+        font-size: 50px;
+    }
+}
