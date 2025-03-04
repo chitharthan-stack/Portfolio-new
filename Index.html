@@ -246,15 +246,18 @@
             <dotlottie-player src="https://lottie.host/364361ba-4785-43d3-a542-55b4d0824c1c/dkJ4o52tAo.json" background="transparent" speed="1"  direction="1" playMode="normal" loop autoplay id="contact-lottie"></dotlottie-player>
           </div>
           <div class="contact col-2">
-            <form action="">
-            <label for="name">My name is </label><Input type="text" required  name="name"  id="name"></Input>
-            <label for="location">I'm from </label><Input type="text" required  name="Location" id="Location"></Input>
-            <label for="email">Here is my email</label> </label><Input type="email" required  name="email" id="email"></Input>
-            <label for="No">My Number</label> </label><Input type="tel"  name="No" id="No"></Input>
-            <br><label for="message">and message</label> <br></label> <textarea id="message" name="message" rows="1" required></textarea>
-            </form>
+            <form  name="contact" method="POST" netlify>
+              <label for="name">My name is </label><Input type="text" required  name="name"  id="name"></Input>
+              <label for="location">I'm from </label><Input type="text" required  name="Location" id="Location"></Input>
+              <label for="email">Here is my email</label> </label><Input type="email" required  name="email" id="email"></Input>
+              <label for="No">My Number</label> </label><Input type="tel"  name="No" id="No"></Input>
+              <br><label for="message">and message</label> <br></label> <textarea id="message" name="message" rows="1" required></textarea>
+              <div class="heading col">
+                <button class="btn" >send</button>
+              </div>
+          </form>
           </div>
-          <button class="btn">send</button>
+          
         </div>
        
       </div> 
