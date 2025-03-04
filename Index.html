@@ -34,92 +34,72 @@
     </section>
 
     <!-------------------------About section---------------------------------->
-    <div class="container-gsap">
-    <div class="panel">
-    <section>
-      <div class="container">
-        <div class="row">
-         
-          <div class="about col">
-            <p class="typography">About </p>
-            <h1 class="text-animation">
-              <span> About Myself </span>
-              
-            </h1>
-            <p id="aboutp">Greetings! I trust you are faring well. I am Sidhu, a self-driven developer with a fervent passion for Python. My expertise spans the entire spectrum of project development, from conceptual design to implementation and hosting. Beyond coding, I engage in a myriad of other pursuits. I hold a Master's degree in Bioinformatics, and my proficiency extends to both design and development. As a recent graduate, I am voraciously eager to acquire new knowledge across diverse domains. Currently, I am on a journey to establish my own enterprise that specializes in bespoke website development services. Additionally, I have a penchant for fitness and enjoy regular visits to the gym</p>
-          </div>
-        </div>
+    <div class="horizontal-scroll-container">
+      <div class="panel">
+          <section>
+              <div class="container">
+                  <div class="row">
+                      <div class="about col">
+                          <p class="typography">About</p>
+                          <h1 class="text-animation"><span> About Myself </span></h1>
+                          <p id="aboutp">
+                              Greetings! I trust you are faring well. I am Sidhu, a self-driven developer with a fervent passion for Python...
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </section>
       </div>
-    </section>
-    </div>
-
-    <!-------------------------Project section---------------------------------->
-    <div class="panel">
-        <section class="product">
-          <div class="prd container">
-            <div class="row">
-              <div class="prd col">
-                <h1 class="text-animation">
-                  <span> Project </span>
-                </h1>
-                
-                <p>Thing ive Done so far</p>
+  
+      <!-------------------------Project section---------------------------------->
+      <div class="panel">
+          <section class="product">
+              <div class="prd container">
+                  <div class="row">
+                      <div class="prd col">
+                          <h1 class="text-animation"><span> Project </span></h1>
+                          <p>Things I've Done So Far</p>
+                      </div>
+                  </div>
+                  <div class="prd row">
+                      <div class="project col-3"><img src="images/rmitha.jpg" alt="" /></div>
+                      <div class="project col-3"><video autoplay loop src="/images/ldi.mp4"></video></div>
+                      <div class="project col-3"><img src="images/venkateshwara finance.jpg" alt="" /></div>
+                  </div>
+                  <div class="scprd row">
+                      <div class="project col-2"><img src="images/senthamiz.jpg" alt="" /></div>
+                      <div class="project col-2"><img src="images/Designer.png" alt="" /></div>
+                  </div>
               </div>
-            </div>
-            <div class="prd row">
-              <div class="project col-3">
-                <img src="images/rmitha.jpg" alt="" />
+          </section>
+      </div>
+  
+      <!-------------------------Timeline---------------------------------->
+      <div class="panel">
+          <section class="tml">
+              <div class="container">
+                  <div class="row">
+                      <div class="prd col">
+                          <h1 class="text-animation"><span> Experience </span></h1>
+                          <p class="typography">Experience</p>
+                          <p>Places I've worked so far</p>
+                      </div>
+                  </div>
+                  <div class="tm row">
+                      <div class="tmimg col-2"><img src="images/clri.jpg" alt="" /></div>
+                      <div class="tm col-2">
+                          <div class="tm-content">
+                              <h1>Technical Assistance</h1>
+                              <p>CSIR-CENTRAL LEATHER RESEARCH INSTITUTE</p>
+                              <p>December 2022 - April 2023</p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="project col-3">
-                <video autoplay loop src="/images/ldi.mp4"></video>
-                <!-- <img src="images/Designer.png" alt="" /> -->
-              </div>
-              <div class="project col-3">
-                <img src="images/venkateshwara finance.jpg" alt="" />
-              </div>
-            </div>
-            <div class="scprd row">
-              <div class="project col-2">
-                <img src="images/senthamiz.jpg" alt="" />
-              </div>
-              <div class="project col-2">
-                <img src="images/Designer.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
-    </div>
-     
-    <!-------------------------Timeline---------------------------------->
-    <div class="panel">
-        <section class="tml">
-          <div class="container">
-            <div class="row">
-              <div class="prd col">
-                <h1 class="text-animation">
-                  <span> Experience </span>
-                </h1>
-                <p class="typography">Experience</p>
-                
-                <p>Places Ive worked so far</p>
-              </div>
-            </div>
-          <div class="tm row">
-          <div class="tmimg col-2">
-            <img src="images/clri.jpg" alt="" />
-          </div>
-          <div class="tm col-2">
-           
-            <div class="tm-content">
-              <h1>Technical Assistance</h1>
-              <p>CSIR-CENTRAL LEATHER RESEARCH INSTITUTE </p>
-              <p>December 2022 - April 2023</p>
-            </div>
-          </div>
-        </div>
-        </section>
-    </div>
-    </div>  
+          </section>
+      </div>
+  </div>
+  
     <section >
         <div class="tm row tm2-mobile">
           <div class="tm2 col-2">
@@ -281,37 +261,26 @@
 
 
     <script type="text/javascript" src="script.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lenis@latest/dist/lenis.min.js"></script>
     <script>
-      //--------------------------------Horizontal Scroll-----------------------------//
-          function applyHorizontalScroll() {
+     gsap.registerPlugin(ScrollTrigger);
 
-          gsap.registerPlugin(ScrollTrigger);
-            
-          let sections = gsap.utils.toArray(".panel");
-          gsap.to(sections, {
-              xPercent: -100 * (sections.length - 1),
-            
-              scrollTrigger: {
-                  trigger: ".container-gsap",
-                  pin: true,
-                  scrub: 1,
-                  snap: 1 / (sections.length - 1),
-                  end: () => "+=" + (sections.length - 1) * window.innerWidth,
-              },
-          });
-        }
-        if (window.innerWidth > 800) {
-          applyHorizontalScroll();
-        }
-        const lenis = new Lenis();
-        function raf(time) {
-          lenis.raf(time);
-          requestAnimationFrame(raf);
-        }
-        requestAnimationFrame(raf);
-    </script> -->
+let panels = gsap.utils.toArray(".horizontal-scroll-container .panel");
+
+gsap.to(panels, {
+    xPercent: -100 * (panels.length - 1),
+    ease: "none",
+    scrollTrigger: {
+        trigger: ".horizontal-scroll-container",
+        pin: true,
+        scrub: 1,
+        snap: 1 / (panels.length - 1),
+        end: () => "+=" + document.querySelector(".horizontal-scroll-container").offsetWidth
+    }
+});
+
+    </script>
   </body>
 </html>

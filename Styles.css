@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow: auto !important; 
+    /* overflow: auto !important;  */
 
 }
 
@@ -409,7 +409,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40vh;
+    width: 150vh;
 }
 
 .tmimg.col-2 img {
@@ -810,4 +810,28 @@ blockquote {
     .heading.col h1 {
         font-size: 50px;
     }
+}
+
+/* ------------------GSAP-------------------------- */
+/* Wrapper for horizontal scrolling */
+.horizontal-scroll-container {
+    display: flex;
+    width: 300vw; /* 3 panels, each taking full viewport width */
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Ensure each panel takes up full viewport width */
+.horizontal-scroll-container .panel {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Prevent unwanted vertical scrolling */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
 }
