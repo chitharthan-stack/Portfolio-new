@@ -320,8 +320,11 @@ a {
     width: 100%;
     object-fit: cover;
     object-position: top;
+    border-radius: 6px;
 }
-
+video {
+    border-radius: 6px;
+}
 .project.col-2 {
     height: 40vh;
     display: flex;
@@ -333,6 +336,8 @@ a {
     width: 100%;
     object-fit: cover;
     object-position: top;
+    border-radius: 6px;
+
 }
 
 .product {
@@ -419,6 +424,7 @@ a {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 6px;
 }
 
 .tm.row {
