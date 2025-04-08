@@ -319,6 +319,7 @@ a {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: top;
 }
 
 .project.col-2 {
@@ -331,6 +332,7 @@ a {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: top;
 }
 
 .product {
@@ -349,6 +351,7 @@ a {
 .scprd.row {
     margin-top: 1%;
     gap: 20px;
+    justify-content: space-evenly;
 }
 
 .prd.row {
