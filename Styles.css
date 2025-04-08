@@ -863,3 +863,43 @@
     z-index: 9999; /* Keep it above other content */
   }
   
+
+  /* ------------------------meun bar----------------------0 */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+/* Sticky vertical menu on right */
+.side-menu {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 10px;
+    z-index: 999;
+  }
+  
+  .menu-item {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    background: var(--secondary-color, #f8f8f8);
+    color: var(--primary-color, #ee0000);
+    text-decoration: none;
+    padding: 8px 6px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    opacity: 0.3;
+  }
+  
+  .menu-item:hover {
+    opacity: 1;
+    background: var(--primary-color, #ee0000);
+    color: #fff;
+    cursor: pointer;
+  }
