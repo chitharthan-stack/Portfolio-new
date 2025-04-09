@@ -40,6 +40,7 @@
   a {
     text-decoration: none;
     cursor: url(images/anchor.svg), auto;
+    /* all: unset;  */
   }
   
   ::selection {
@@ -294,7 +295,7 @@
   
   /*-----------------------------------Project Section----------------------------------------*/
   .project.col-3 {
-    height: 30vh;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
   }
@@ -308,6 +309,7 @@
   }
   video {
     border-radius: 6px;
+    height: 30vh;
   }
   .project.col-2 {
     height: 40vh;
@@ -371,6 +373,12 @@
     .project.col-3 {
       height: 15vh;
     }
+    video {
+      border-radius: 6px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
   }
   
   /*-----------------------------------Time Line--------------------------------*/
@@ -432,12 +440,17 @@
     }
   
     .skills.col-5 img {
-      height: 10vh !important;
+      height: 6vh !important;
     }
     .skill.col {
       flex-direction: column;
       margin: 15vh 5vh 0vh 5vh;
     }
+
+    .skills.col-5 {
+      margin-top: 6%;
+    }
+   
   }
   
   /*-----------------------------------SKills--------------------------------*/
@@ -783,6 +796,9 @@
     }
     .skills.col-5 img {
       height: 7vh !important;
+    }
+    .skills.col-5 {
+      margin-top: 6%;
     }
   }
   
